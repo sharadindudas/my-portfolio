@@ -7,3 +7,8 @@ export interface Project {
     github: string;
     techStack: string[];
 }
+
+interface TechIcon {
+    name: string;
+    icon: React.ReactNode;
+}

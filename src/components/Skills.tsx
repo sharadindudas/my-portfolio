@@ -45,7 +45,7 @@ const SkillSection = () => {
     }, []);
 
     return (
-        <div className="relative flex h-full w-full items-center justify-center overflow-hidden bg-background px-20 pb-20 pt-8 ">
+        <div className="relative flex h-full w-full items-center justify-center overflow-hidden bg-background px-20 pb-20 pt-8">
             {isMounted && <IconCloud iconSlugs={slugs} />}
         </div>
     );

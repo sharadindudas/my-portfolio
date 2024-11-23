@@ -67,3 +67,13 @@
         @apply bg-background text-foreground;
     }
 }
+
+.product-img {
+    @apply w-full h-[200px] sm:h-[250px] md:h-[300px] bg-cover bg-no-repeat rounded-lg overflow-hidden;
+    background-position-y: 0%;
+    transition: background 3s ease-in-out;
+}
+
+.product-img:hover {
+    background-position-y: 100%;
+}
