@@ -23,7 +23,7 @@ const HeroSection = () => {
                 <div className="flex justify-center mt-8">
                     <Link
                         className="group flex items-center gap-2 bg-white text-black px-5 sm:h-11 h-10 text-sm sm:text-base font-medium rounded-lg"
-                        href="https://drive.google.com/file/d/1ChbdoC6RawI0O3Ki4HaAh2dQk_So_iji/view?usp=sharing"
+                        href="https://drive.google.com/file/d/17lj-O63oMrin2Tzr_vgcgLRiaZZQnSz5/view?usp=drive_link"
                         target="_blank"
                     >
                         <DownloadIcon className="mr-2 h-4 w-4 group-hover:animate-bounce" />
