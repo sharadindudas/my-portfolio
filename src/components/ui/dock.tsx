@@ -22,17 +22,7 @@ const dockVariants = cva(
 );
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
-    (
-        {
-            className,
-            children,
-            magnification = DEFAULT_MAGNIFICATION,
-            distance = DEFAULT_DISTANCE,
-            direction = "bottom",
-            ...props
-        },
-        ref
-    ) => {
+    ({ className, children, magnification = DEFAULT_MAGNIFICATION, distance = DEFAULT_DISTANCE, direction = "bottom", ...props }, ref) => {
         const mouseX = useMotionValue(Infinity);
 
         const renderChildren = () => {
@@ -59,8 +49,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
                     "items-start": direction === "top",
                     "items-center": direction === "middle",
                     "items-end": direction === "bottom"
-                })}
-            >
+                })}>
                 {renderChildren()}
             </motion.div>
         );
@@ -101,11 +90,7 @@ const DockIcon = ({
         return val - bounds.x - bounds.width / 2;
     });
 
-    const widthSync = useTransform(
-        distanceCalc,
-        [-distance, 0, distance],
-        [40, magnification, 40]
-    );
+    const widthSync = useTransform(distanceCalc, [-distance, 0, distance], [40, magnification, 40]);
 
     const width = useSpring(widthSync, {
         mass: 0.1,
@@ -117,12 +102,8 @@ const DockIcon = ({
         <motion.div
             ref={ref}
             style={{ width }}
-            className={cn(
-                "flex aspect-square cursor-pointer items-center justify-center rounded-full",
-                className
-            )}
-            {...props}
-        >
+            className={cn("flex aspect-square cursor-pointer items-center justify-center rounded-full", className)}
+            {...props}>
             {children}
         </motion.div>
     );
@@ -131,3 +112,4 @@ const DockIcon = ({
 DockIcon.displayName = "DockIcon";
 
 export { Dock, DockIcon, dockVariants };
+

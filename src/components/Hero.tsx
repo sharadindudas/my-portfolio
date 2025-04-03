@@ -15,17 +15,14 @@ const HeroSection = () => {
                     Full Stack Developer
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground">
-                    Developing design and functionality with cutting-edge
-                    frontend expertise and rapidly expanding backend skills.
-                    Transforming ideas into seamless, user-centric digital
-                    experiences.
+                    Developing design and functionality with cutting-edge frontend expertise and rapidly expanding backend skills. Transforming ideas
+                    into seamless, user-centric digital experiences.
                 </p>
                 <div className="flex justify-center mt-8">
                     <Link
                         className="group flex items-center gap-2 bg-white text-black px-5 sm:h-11 h-10 text-sm sm:text-base font-medium rounded-lg"
-                        href="https://drive.google.com/file/d/1-g8SFY_ZawiJCT5BpqwYbl0BvIq0DHfN/view?usp=drive_link"
-                        target="_blank"
-                    >
+                        href="https://drive.google.com/file/d/14IEFFA-Qy1TsSWzRpEOC1-LEv9og91g7/view?usp=sharing"
+                        target="_blank">
                         <DownloadIcon className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                         Download Resume
                     </Link>

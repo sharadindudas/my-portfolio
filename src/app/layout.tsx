@@ -10,15 +10,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: "Sharadindu Das",
-    description:
-        "Personal portfolio for full-stack developer based in Kolkata, West Bengal.",
-    keywords: [
-        "portfolio",
-        "full stack developer",
-        "web developer",
-        "frontend developer",
-        "backend developer"
-    ],
+    description: "Personal portfolio for full-stack developer based in Kolkata, West Bengal.",
+    keywords: ["portfolio", "full stack developer", "web developer", "frontend developer", "backend developer"],
     authors: [{ name: "Sharadindu Das", url: "https://github.com/R3MODAS" }],
     creator: "Sharadindu Das",
     publisher: "Sharadindu Das",
@@ -33,17 +26,19 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html
+            lang="en"
+            suppressHydrationWarning>
             <body className={`${inter.className} antialiased`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
-                    disableTransitionOnChange
-                >
+                    disableTransitionOnChange>
                     {children}
                 </ThemeProvider>
             </body>
         </html>
     );
 }
+

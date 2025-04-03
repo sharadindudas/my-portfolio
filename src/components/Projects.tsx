@@ -10,14 +10,7 @@ const projects: Project[] = [
         image: "/assets/project1.png",
         liveSite: "https://mystry-message.sharadindudas.com",
         github: "https://github.com/sharadindudas/mystry-message",
-        techStack: [
-            "Next",
-            "TypeScript",
-            "MongoDB",
-            "Redis",
-            "Shadcn",
-            "Tailwind"
-        ]
+        techStack: ["Next", "TypeScript", "MongoDB", "Redis", "Shadcn", "Tailwind"]
     },
     {
         id: 2,
@@ -56,18 +49,17 @@ const ProjectSection = () => {
         <section className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
-                        My Projects
-                    </h2>
+                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">My Projects</h2>
                     <p className="max-w-[900px] text-sm sm:text-base md:text-lg text-muted-foreground">
-                        Check out some of the projects I have worked on various
-                        web applications which showcases my skills and
-                        creativity.
+                        Check out some of the projects I have worked on various web applications which showcases my skills and creativity.
                     </p>
                 </div>
                 <div className="mt-8 sm:mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
                     {projects.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                        />
                     ))}
                 </div>
             </div>

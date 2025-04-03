@@ -14,8 +14,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-primary"
-            >
+                className="w-5 h-5 text-primary">
                 <title>Next.js</title>
                 <path
                     fill="currentColor"
@@ -31,8 +30,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#3178C6]"
-            >
+                className="w-5 h-5 text-[#3178C6]">
                 <title>TypeScript</title>
                 <path
                     fill="currentColor"
@@ -48,8 +46,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#F7DF1E]"
-            >
+                className="w-5 h-5 text-[#F7DF1E]">
                 <title>JavaScript</title>
                 <path
                     fill="currentColor"
@@ -65,8 +62,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#47A248]"
-            >
+                className="w-5 h-5 text-[#47A248]">
                 <title>MongoDB</title>
                 <path
                     fill="currentColor"
@@ -82,8 +78,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#06B6D4]"
-            >
+                className="w-5 h-5 text-[#06B6D4]">
                 <title>Tailwind CSS</title>
                 <path
                     fill="currentColor"
@@ -99,8 +94,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-primary"
-            >
+                className="w-5 h-5 text-primary">
                 <title>shadcn/ui</title>
                 <path
                     fill="currentColor"
@@ -116,8 +110,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-primary"
-            >
+                className="w-5 h-5 text-primary">
                 <title>React</title>
                 <path
                     fill="currentColor"
@@ -133,8 +126,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#764ABC]"
-            >
+                className="w-5 h-5 text-[#764ABC]">
                 <title>Redux</title>
                 <path
                     fill="currentColor"
@@ -150,8 +142,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#CC6699]"
-            >
+                className="w-5 h-5 text-[#CC6699]">
                 <title>Sass</title>
                 <path
                     fill="currentColor"
@@ -167,8 +158,7 @@ const TechIcons: Record<string, TechIcon> = {
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#DC382D]"
-            >
+                className="w-5 h-5 text-[#DC382D]">
                 <title>Redis</title>
                 <path
                     fill="currentColor"
@@ -186,22 +176,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 style={{
                     backgroundImage: `url(${project.image})`
                 }}
-                className="product-img"
-            ></div>
+                className="product-img"></div>
             <div className="bg-background p-4">
-                <h3 className="text-lg sm:text-xl font-bold">
-                    {project.title}
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                    {project.description}
-                </p>
+                <h3 className="text-lg sm:text-xl font-bold">{project.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                     {project.techStack.map((tech) => (
                         <div
                             key={tech}
                             className="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center rounded-full"
-                            title={TechIcons[tech].name}
-                        >
+                            title={TechIcons[tech].name}>
                             {TechIcons[tech].icon}
                         </div>
                     ))}
@@ -211,8 +195,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         href={project.liveSite}
                         className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                         target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                        rel="noopener noreferrer">
                         <ExternalLinkIcon className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                         Live Site
                     </Link>
@@ -220,8 +203,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         href={project.github}
                         className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                         target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                        rel="noopener noreferrer">
                         <GithubIcon className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                         GitHub
                     </Link>
