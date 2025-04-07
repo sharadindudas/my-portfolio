@@ -28,6 +28,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         {
             className,
             children,
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             iconSize = DEFAULT_SIZE,
             iconMagnification = DEFAULT_MAGNIFICATION,
             iconDistance = DEFAULT_DISTANCE,
