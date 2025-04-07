@@ -2473,6 +2473,14 @@ motion-utils@^12.6.3:
   resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.6.3.tgz#6f80e0b6d203b7a915cc6451860467e61590c077"
   integrity sha512-R/b3Ia2VxtTNZ4LTEO5pKYau1OUNHOuUfxuP0WFCTDYdHkeTBR9UtxR1cc8mDmKr8PEhmmfnTKGz3rSMjNRoRg==
 
+motion@^12.6.3:
+  version "12.6.3"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-12.6.3.tgz#b681abcae33d237cf247eb691dcc92d2197e59d7"
+  integrity sha512-zw/vqUgv5F5m9fkvOl/eCv2AF1+tkeZl3fu2uIlisIaip8sm5e0CouAl6GkdiRoF+G7s29CjqMdIyPMirwUGHA==
+  dependencies:
+    framer-motion "^12.6.3"
+    tslib "^2.4.0"
+
 ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
