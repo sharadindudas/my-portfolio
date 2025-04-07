@@ -26,8 +26,8 @@ export const cloudProps: Omit<ICloud, "children"> = {
         tooltipDelay: 0,
         outlineColour: "#0000",
         maxSpeed: 0.04,
-        minSpeed: 0.02
-        // dragControl: false,
+        minSpeed: 0.02,
+        dragControl: true
     }
 };
 

@@ -4,13 +4,13 @@ import ProjectCard from "./ProjectCard";
 const projects: Project[] = [
     {
         id: 1,
-        title: "Mystry Message",
+        title: "Devtinder",
         description:
-            "Mystery Message is a web application where logged-in users can receive messages, and anyone not logged-in can send messages anonymously. Share your link to collect anonymous messages or use someone's link to send one.",
+            "DevTinder is a developer networking platform that allows users to connect, chat, and collaborate based on mutual interest. Featuring a swipe-based matchmaking system, real-time chat with Socket.io, and secure authentication, it helps developers build meaningful connections effortlessly. 🚀",
         image: "/assets/project1.png",
-        liveSite: "https://mystry-message.sharadindudas.com",
-        github: "https://github.com/sharadindudas/mystry-message",
-        techStack: ["Next", "TypeScript", "MongoDB", "Redis", "Shadcn", "Tailwind"]
+        liveSite: "https://devtinder-remo.vercel.app",
+        github: "https://github.com/sharadindudas/devtinder",
+        techStack: ["React", "JavaScript", "DaisyUi", "Tailwind", "Node", "Express", "MongoDB"]
     },
     {
         id: 2,
@@ -41,6 +41,16 @@ const projects: Project[] = [
         liveSite: "https://united-monks.vercel.app",
         github: "https://github.com/sharadindudas/united-monks",
         techStack: ["React", "JavaScript", "Sass"]
+    },
+    {
+        id: 5,
+        title: "Mystry Message",
+        description:
+            "Mystery Message is a web application where logged-in users can receive messages, and anyone not logged-in can send messages anonymously. Share your link to collect anonymous messages or use someone's link to send one.",
+        image: "/assets/project5.png",
+        liveSite: "https://mystry-message.sharadindudas.com",
+        github: "https://github.com/sharadindudas/mystry-message",
+        techStack: ["Next", "TypeScript", "MongoDB", "Redis", "Shadcn", "Tailwind"]
     }
 ];
 
