@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <div className="flex justify-center mt-8">
                     <Link
                         className="group flex items-center gap-2 bg-white text-black px-5 sm:h-11 h-10 text-sm sm:text-base font-medium rounded-lg"
-                        href="https://drive.google.com/file/d/1tvWiLXtWUXNQQnnm-Sl09S7tTlC-hJQ2/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1Fiz9NQbHrNwvvukZvPW7KOIRuAaofZMG/view?usp=sharing"
                         target="_blank">
                         <DownloadIcon className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                         Download Resume
