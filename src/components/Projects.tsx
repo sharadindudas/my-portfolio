@@ -28,8 +28,7 @@ const projects: Project[] = [
         description:
             "Gouranga Paul is a modern e-commerce platform offering premium readymade blouses and petticoats across Kolkata ensuring a seamless shopping experience, so browse our products, pick your favorites and securely pay via CCAvenue",
         image: "/assets/project3.png",
-        liveSite: "https://gourangapaul.vercel.app",
-        github: "https://github.com/sharadindudas/gpsons",
+        liveSite: "https://gourangapaul.com",
         techStack: ["Next", "TypeScript", "Shadcn", "Tailwind"]
     },
     {

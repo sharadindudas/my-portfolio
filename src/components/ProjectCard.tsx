@@ -247,14 +247,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         <ExternalLinkIcon className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                         Live Site
                     </Link>
-                    <Link
-                        href={project.github}
-                        className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-xs transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <GithubIcon className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        GitHub
-                    </Link>
+                    {project.github && (
+                        <Link
+                            href={project.github}
+                            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-xs transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <GithubIcon className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                            GitHub
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

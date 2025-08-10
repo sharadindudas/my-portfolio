@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     title: "Sharadindu Das",
     description: "Personal portfolio for full-stack developer based in Kolkata, West Bengal.",
     keywords: ["portfolio", "full stack developer", "web developer", "frontend developer", "backend developer"],
-    authors: [{ name: "Sharadindu Das", url: "https://github.com/R3MODAS" }],
+    authors: [{ name: "Sharadindu Das", url: "https://github.com/sharadindudas" }],
     creator: "Sharadindu Das",
     publisher: "Sharadindu Das",
-    applicationName: "Sharadindu Das",
+    applicationName: "Sharadindu Das Portfolio",
     generator: "Next.js",
     metadataBase: new URL("https://sharadindudas.com/")
 };
