@@ -18,7 +18,7 @@ const projects: Project[] = [
         description:
             "Spicy Pricey is a food delivery application using Swiggy's Realtime API for restaurant data, location-based recommendations, menu browsing, and Razorpay for secure payments. Enjoy a seamless food ordering experience.",
         image: "/assets/project2.png",
-        liveSite: "https://spicy-pricey.sharadindudas.com",
+        liveSite: "https://spicy-pricey.vercel.app",
         github: "https://github.com/sharadindudas/spicy-pricey",
         techStack: ["React", "Redux", "JavaScript", "Shadcn", "Tailwind"]
     },
@@ -47,7 +47,7 @@ const projects: Project[] = [
         description:
             "Mystery Message is a web application where logged-in users can receive messages, and anyone not logged-in can send messages anonymously. Share your link to collect anonymous messages or use someone's link to send one.",
         image: "/assets/project5.png",
-        liveSite: "https://mystry-message.sharadindudas.com",
+        liveSite: "https://mystry-message-remo.vercel.app",
         github: "https://github.com/sharadindudas/mystry-message",
         techStack: ["Next", "TypeScript", "MongoDB", "Redis", "Shadcn", "Tailwind"]
     }
