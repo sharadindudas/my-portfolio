@@ -4,41 +4,40 @@ import ThemeProvider from "@/providers/ThemeProvider";
 import "@/styles/index.css";
 
 const inter = Inter({
-    subsets: ["latin"],
-    display: "swap"
+  subsets: ["latin"],
+  display: "swap"
 });
 
 export const metadata: Metadata = {
-    title: "Sharadindu Das",
-    description: "Personal portfolio for full-stack developer based in Kolkata, West Bengal.",
-    keywords: ["portfolio", "full stack developer", "web developer", "frontend developer", "backend developer"],
-    authors: [{ name: "Sharadindu Das", url: "https://github.com/sharadindudas" }],
-    creator: "Sharadindu Das",
-    publisher: "Sharadindu Das",
-    applicationName: "Sharadindu Das Portfolio",
-    generator: "Next.js",
-    metadataBase: new URL("https://sharadindudas.com/")
+  title: "Sharadindu Das",
+  description: "Personal portfolio for full-stack developer based in Kolkata, West Bengal.",
+  keywords: ["portfolio", "full stack developer", "web developer", "frontend developer", "backend developer"],
+  authors: [{ name: "Sharadindu Das", url: "https://github.com/sharadindudas" }],
+  creator: "Sharadindu Das",
+  publisher: "Sharadindu Das",
+  applicationName: "Sharadindu Das Portfolio",
+  generator: "Next.js",
+  metadataBase: new URL("https://sharadindudas.com/")
 };
 
 export default function RootLayout({
-    children
+  children
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html
-            lang="en"
-            suppressHydrationWarning>
-            <body className={`${inter.className} antialiased`}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange>
-                    {children}
-                </ThemeProvider>
-            </body>
-        </html>
-    );
+  return (
+    <html
+      lang="en"
+      suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }
-
