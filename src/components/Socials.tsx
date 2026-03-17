@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";

@@ -1,6 +1,6 @@
 "use client";
 
-import RetroGrid from "@/components/ui/retro-grid";
+import { RetroGrid } from "@/components/ui/retro-grid";
 import { DownloadIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -18,10 +18,10 @@ const HeroSection = () => {
         </p>
         <div className="flex justify-center mt-8">
           <Link
-            className="group flex items-center gap-2 bg-white text-black px-5 sm:h-11 h-10 text-sm sm:text-base font-medium rounded-lg"
+            className="group flex items-center gap-2 bg-primary text-primary-foreground px-5 sm:h-11 h-10 text-sm sm:text-base font-medium rounded-lg transition-colors hover:bg-primary/90"
             href="https://drive.google.com/file/d/1tGVTv3gYHsQf8AqCdN-oRtZYjOPv4Arp/view?usp=sharing"
             target="_blank">
-            <DownloadIcon className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+            <DownloadIcon className="mr-2 size-4 group-hover:animate-bounce" />
             Download Resume
           </Link>
         </div>

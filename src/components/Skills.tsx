@@ -10,6 +10,18 @@ const slugs = [
   "nodedotjs",
   "express",
   "mongodb",
+  "drizzle",
+  "postgresql",
+  "hono",
+  "bun",
+  "better auth",
+  "nginx",
+  "graphql",
+  "tanstack",
+  "cloudinary",
+  "resend",
+  "libuv",
+  "vite",
   "html5",
   "css3",
   "javascript",
@@ -25,16 +37,15 @@ const slugs = [
   "tailwindcss",
   "sass",
   "c",
-  "python",
   "tsnode",
-  "nodemon",
   "shadcnui",
   "render",
   "dotenv",
   "netlify",
   "eslint",
   "prettier",
-  "redux"
+  "redux",
+  "zustand"
 ];
 
 const SkillSection = () => {
