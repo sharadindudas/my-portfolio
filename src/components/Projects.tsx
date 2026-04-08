@@ -23,7 +23,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "FoodFlow",
+    title: "Foodflow",
     description:
       "A modern food ordering web application delivering a seamless experience with real-time restaurant data, cart management, Firebase authentication, and Razorpay payments. It securely routes external API calls through a custom Backend-for-Frontend (BFF) Express API Gateway.",
     image: "/assets/foodflow.png",
